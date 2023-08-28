@@ -1,0 +1,46 @@
+fhkgkjfhflks
+skldufjskl;df
+slkdfjlsk
+
+
+       for i in range(0,4):
+        print(f.readline(i))
+        self.add_widget(Button(text=f'{f.readline(i)}'))
+
+           GridLayout:
+            cols:2
+
+            Label:
+                text: "Name: "
+
+            TextInput:
+                multinline:False
+
+            Label:
+                text: "Email: "
+
+            TextInput:
+                multiline:False
+            Button:
+                text: "Hello World!"
+
+
+
+    canvas:
+            Rectangle:
+                source: 'bc.jpg'
+                size: self.size
+                pos: self.pos
+                Button:
+                    padding: [50, 50]
+
+     OP:
+		OpL2:
+		    text:"Описание:\\nСотка-это одна из лидирующих онлайн школ подготовки к ЕГЭ и ОГЭ,\\nпозволяющая подготовиться к экзаменам в интересном и увлекательном формате."
+		OpL1:
+		    text:"Предметы: английский язык, биология,физика,химия,история,\\n информатика,литература,математикка,обществознание,русский язык"
+		OpL3:
+		    text:"Цена:\\n Обучение стоит от 3750р до 4030р в месяц в зависимости от выбрвнного тарифа.\\n В эту цену включена полноценная подготовка по всем предметам,которые сдает ученик.\\n Доплачивать не нужно. "
+		OpS:
+		    on_release:
+		        webbrowser.get().open_new_tab("https://sotkaonline.ru/")
